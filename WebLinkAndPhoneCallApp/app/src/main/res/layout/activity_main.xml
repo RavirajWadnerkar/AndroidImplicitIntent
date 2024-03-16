@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity"
+android:padding="16dp">
+
+<TextView
+    android:id="@+id/titleTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Implicit Intents"
+    android:textSize="18sp"
+    android:layout_centerHorizontal="true" />
+
+<EditText
+    android:id="@+id/urlEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="http://www.example.com"
+    android:inputType="textUri"
+    android:layout_below="@id/titleTextView" />
+
+<Button
+    android:id="@+id/launchButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Launch"
+    android:layout_below="@id/urlEditText"/>
+
+<EditText
+    android:id="@+id/phoneEditText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="(XXX) XXX - XXXX"
+    android:inputType="phone"
+    android:layout_below="@id/launchButton"/>
+
+<Button
+    android:id="@+id/ringButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Ring"
+    android:layout_below="@id/phoneEditText"/>
+
+<Button
+    android:id="@+id/closeButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Close App"
+    android:layout_below="@id/ringButton"/>
+
+</RelativeLayout>
